@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: sixsense
+    database: dsv_elt_ingestion
+    schema: six_sense
+    tables:
+      - name: raw_intent
+        description: "Raw intent data pulled from the SixSense SFTP and loaded via Databricks."
+      - name: raw_predictiveleads
+        description: "Raw predictive lead scoring data pulled from the SixSense SFTP and loaded via Databricks."

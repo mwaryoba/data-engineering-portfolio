@@ -1,0 +1,29 @@
+name: sixsense_dbt_project
+version: '1.0'
+
+config-version: 2
+
+profile: default
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  sixsense_dbt_project:
+    staging:
+      materialized: table
+      +database: dsv_ods
+      +schema: stg
+    marts:
+      materialized: view
+      +database: dsv_ods
+      +schema: mart
