@@ -1,0 +1,19 @@
+dev:
+  six_sense:
+    databricks:
+      six_sense_intent: 548668433249997
+      six_sense_predictiveleads: 689571118921397
+    dbt:
+      job_intent_dbt: 828363
+      job_predictiveleads_dbt: 828356
+
+prod:
+  six_sense:
+    databricks:
+      six_sense_intent: 627473808730591
+      six_sense_intent_mid: 963595139960768
+      six_sense_predictiveleads: 90745014407813
+      six_sense_predictiveleads_mid: 707526451547920
+    dbt:
+      job_intent_dbt: 828364
+      job_predictiveleads_dbt: 828356
