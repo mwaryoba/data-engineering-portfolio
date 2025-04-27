@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_sixsense_intent
+    description: "Staging model for SixSense intent data."
+    columns:
+      - name: crm_account_id
+        description: "CRM account identifier."
+
+  - name: stg_sixsense_predictive_leads
+    description: "Staging model for SixSense predictive leads."
+    columns:
+      - name: crm_lead_id
+        description: "CRM lead identifier."
